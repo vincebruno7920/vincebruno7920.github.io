@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock Paper Scissors Game</title>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="css/rps.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <a class="btn btn-success" onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</a>
+  <div class="container mt-5">
+    <h2>Rock Paper Scissors!</h2>
+    <p>Click a button (rock, paper, or scissors) and your choice will display,
+      followed by the computer's choice and the result. Close the tab when
+      you are finished playing.</p>
+
+    <div id="buttons">
+        <button type="button" class="btn btn-primary" id="rock">Rock</button>
+        <button type="button" class="btn btn-primary" id="paper">Paper</button>
+        <button type="button" class="btn btn-primary" id="scissors">Scissors</button>
+    </div>
+
+    <div class="row">
+      <div id="you" class="col-sm-4">
+        <h2>You: <span id="user-choice"></span></h2>
+      </div>
+      <div id="comp"class="col-sm-4">
+        <h2>Computer: <span id="computer-choice"></span></h2>
+      </div>
+      <div id="outcome" class="col-sm-4">
+        <h2>Result: <span id="result"></span></h2>
+      </div>
+    </div>
+  </div>
+  <script src="js/rps.js" charset="UTF-8"></script>
+</body>
+</html>
